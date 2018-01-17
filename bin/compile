@@ -106,7 +106,7 @@ execute_buildpack_at_subdir() {
     echo 'going up'
     echo `cd ../ && ls`
     echo 'Here is what is in the directory youre looking in for the procfile'
-    echo `cd $BUILD_DIR/$subdir && ls`
+    echo `cd $BUILD_DIR/$subdir && ls && cat package.json`
       cp $BUILD_DIR/$subdir/Procfile $BUILD_DIR/
 
       # Writes the profile file which initializes paths and sources
