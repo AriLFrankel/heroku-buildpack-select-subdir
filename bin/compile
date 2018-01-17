@@ -102,6 +102,7 @@ execute_buildpack_at_subdir() {
     echo `pwd`
     echo 'Here is what is around you'
     echo `ls`
+    echo `cat README.md`
     echo 'going up'
     echo `cd ../ && ls`
     echo 'Here is what is in the directory youre looking in for the procfile'
